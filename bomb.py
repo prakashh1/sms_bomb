@@ -1,7 +1,10 @@
 import fbchat
 from fbchat import *
 from fbchat.models  import *
-
+from pyfiglet import Figlet
+custom_fig = Figlet(font='cybermedium')
+print(custom_fig.renderText('FB BOMB'))
+print("Press CTRL+C to quit")
 username = str(input("enter your username : "))
 password = str(input("enter your password : "))
 
