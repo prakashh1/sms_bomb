@@ -2,8 +2,15 @@ import fbchat
 from fbchat import *
 from fbchat.models  import *
 from pyfiglet import Figlet
-custom_fig = Figlet(font='cybermedium')
-print(custom_fig.renderText('FB BOMB'))
+import sys
+from colorama import init
+init(strip=not sys.stdout.isatty())
+from termcolor import cprint
+from pyfiglet import figlet_format
+
+text="fb bomb"
+cprint(figlet_format(text, font="digital"), "blue") 
+
 print("Press CTRL+C to quit")
 username = str(input("enter your username : "))
 password = str(input("enter your password : "))
