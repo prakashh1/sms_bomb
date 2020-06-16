@@ -23,7 +23,7 @@ message = str(input("enter your message : "))
 x=0
 y= int(input("enter the lenght of message in number : "))
 while x <= y:
-    sent = client.send(fbchat.models.Message(message), friend.uid)
+    sent = client.send(fbchat.models.Message(str(x)+".) "+message), friend.uid)
     if sent:
         print("Blast is running")
     x += 1
