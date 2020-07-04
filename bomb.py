@@ -7,6 +7,7 @@ from colorama import init
 init(strip=not sys.stdout.isatty())
 from termcolor import cprint
 from pyfiglet import figlet_format
+import time
 
 text="fb bomb"
 cprint(figlet_format(text, font="digital"), "blue") 
@@ -26,5 +27,6 @@ while x <= y:
     sent = client.send(fbchat.models.Message(str(x)+".) "+message), friend.uid)
     if sent:
         print("Blast is running")
+        time.sleep(3)
     x += 1
 print("Blast stopped")
