@@ -4,6 +4,7 @@ from fbchat.models  import *
 from pyfiglet import Figlet
 import sys
 from colorama import init
+import time
 init(strip=not sys.stdout.isatty())
 from termcolor import cprint
 from pyfiglet import figlet_format
@@ -25,6 +26,7 @@ x=0
 y= int(input("enter the lenght of message in number : "))
 while x <= y:
     sent = client.send(fbchat.models.Message(str(x)+".) "+message), friend.uid)
+    time.sleep(2)
     if sent:
         print("Blast is running")
         time.sleep(3)
