@@ -4,3 +4,4 @@
 #pip3 install termcolor
 #pip3 install pyfiglet
 #pip3 install colorama
+#fuck every thing 
