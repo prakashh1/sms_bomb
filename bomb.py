@@ -31,4 +31,4 @@ while x <= y:
         print("Blast is running")
         time.sleep(3)
     x += 1
-print("Blast stopped now go to hell idot ")
+print("Blast stopped now go to hell idot motherfuckers ")
